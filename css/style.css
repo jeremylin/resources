@@ -540,12 +540,14 @@ input[type="password"]:focus {
   max-width: 1400px;
   margin: 63px auto;
   background-color: #FEFEFE;
+  position: relative;
+  top: 160px;
 }
 .resourcePage .sideMenu {
   float: left;
   width: 270px;
   padding: 20px 30px;
-  position: fixed;
+  position: static;
 }
 .resourcePage .sideMenu .menuList {
   margin-left: 0px;
@@ -581,7 +583,7 @@ input[type="password"]:focus {
 }
 .resourcePage .mainResource .allItem .group h2 {
   color: #777777;
-  margin: 12px 0 26px 15px;
+  margin: 20px 0 26px 15px;
 }
 .resourcePage .mainResource .allItem .group .tagGroup .tagg {
   color: #8f8f8f;
@@ -642,15 +644,22 @@ input[type="password"]:focus {
   background-color: #fefefe;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1440px) {
   .resourcePage {
     max-width: 100%;
+    top: 95px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .resourcePage {
+    top: 160px;
   }
   .resourcePage .sideMenu {
+    width: 290px;
     padding: 20px;
   }
   .resourcePage .mainResource {
-    width: calc(100% - 300px);
+    width: calc(100% - 290px);
   }
   .resourcePage .mainResource .allItem .group .tagGroup .eachItem {
     width: calc(50% - 30px);
@@ -663,10 +672,13 @@ input[type="password"]:focus {
     margin: 28px auto;
   }
   .resourcePage .mainResource .allItem .group .tagGroup .eachItem .detailWrap {
-    height: calc(120px - 20px);
+    height: 120px;
   }
 }
 @media screen and (max-width: 1024px) {
+  .resourcePage {
+    top: 160px;
+  }
   .resourcePage .mainResource .allItem .group .tagGroup .eachItem {
     width: calc(100% - 30px);
   }
@@ -681,24 +693,35 @@ input[type="password"]:focus {
   }
 }
 @media screen and (max-width: 767px) {
+  .resourcePage {
+    top: 0;
+  }
   .resourcePage .sideMenu {
     display: none;
   }
   .resourcePage .mainResource {
-    width: calc(100% - 50px);
+    width: 100%;
   }
 }
 @media screen and (max-width: 480px) {
   .resourcePage .mainResource {
-    width: calc(100% - 30px);
     padding: 25px 15px;
   }
   .resourcePage .mainResource .allItem .group .tagGroup .eachItem {
     width: calc(100% - 20px);
     margin: 0 10px 25px;
   }
+  .resourcePage .mainResource .allItem .group .tagGroup .eachItem .logo {
+    width: 80px;
+  }
   .resourcePage .mainResource .allItem .group .tagGroup .eachItem .detailWrap {
-    height: calc(120px - 30px);
+    width: calc(100% - 80px);
+    height: 120px;
+  }
+  .resourcePage .mainResource .allItem .group .tagGroup .eachItem .detailWrap .resourceTitle {
+    margin: 0px 0 5px;
+    font-size: 12px;
+    line-height: 20px;
   }
 }
 

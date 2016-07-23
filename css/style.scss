@@ -33,12 +33,14 @@
     max-width: 1400px;
     margin: 63px auto;
     background-color: #FEFEFE;
+    position: relative;
+    top: 160px;
 
     .sideMenu {
         float: left;
         width: 270px;
         padding: 20px 30px;
-        position: fixed;
+        position: static;
 
         .menuList {
             margin-left: 0px;
@@ -83,7 +85,7 @@
 
                 h2 {
                     color: #777777;
-                    margin: 12px 0 26px 15px;
+                    margin: 20px 0 26px 15px;
                 }
 
                 .tagGroup {
@@ -161,18 +163,27 @@
     }
 }
 
+@media screen and (max-width: 1440px) {
+    /// 如果使用者之視窗寬度介於 1281px ~ 1439px，將會再載入這裡的 CSS。
+    .resourcePage {
+        max-width: 100%;
+        top: 95px;
+    }
+}
+
 
 @media screen and (max-width: 1280px) {
     /// 如果使用者之視窗寬度介於 1025px ~ 1280px，將會再載入這裡的 CSS。
     .resourcePage {
-        max-width: 100%;
+        top: 160px;
 
         .sideMenu {
+            width: 290px;
             padding: 20px;
         }
 
         .mainResource {
-            width: calc(100% - 300px);
+            width: calc(100% - 290px);
 
             .allItem {
                 .group {
@@ -190,7 +201,7 @@
                             }
 
                             .detailWrap {
-                                height: calc(120px - 20px);
+                                height: 120px;
                             }
                         }
                     }
@@ -203,6 +214,8 @@
 @media screen and (max-width: 1024px) {
     // 如果使用者之視窗寬度介於 768px ~ 1024px，將會再載入這裡的 CSS。
     .resourcePage {
+        top: 160px;
+
         .mainResource {
             .allItem {
                 .group {
@@ -233,12 +246,14 @@
 @media screen and (max-width: 767px) {
     // 如果使用者之視窗寬度介於 481px ~ 767px，將會再載入這裡的 CSS。
     .resourcePage {
+        top: 0;
+
         .sideMenu {
             display: none;
         }
 
         .mainResource {
-            width: calc(100% - 50px);
+            width: 100%;
         }
     } 
 }
@@ -248,7 +263,6 @@
     .resourcePage {
 
         .mainResource {
-            width: calc(100% - 30px);
             padding: 25px 15px;
 
             .allItem {
@@ -258,8 +272,19 @@
                             width: calc(100% - 20px);
                             margin: 0 10px 25px;
 
+                            .logo {
+                                width: 80px;
+                            }
+
                             .detailWrap {
-                                height: calc(120px - 30px);
+                                width: calc(100% - 80px);
+                                height: 120px;
+
+                                .resourceTitle {
+                                    margin: 0px 0 5px;
+                                    font-size: 12px;
+                                    line-height: 20px;
+                                }
                             }
                         }
                     }
