@@ -519,7 +519,7 @@ input[type="password"]:focus {
   margin: 50px 0 30px 15px;
 }
 .resourcePage .mainResource .allItem .group .tagGroup .tagg {
-  color: #adadad;
+  color: #8f8f8f;
   margin: 10px 0 10px 15px;
   font-size: 16px;
 }
@@ -568,7 +568,7 @@ input[type="password"]:focus {
 .resourcePage .mainResource .allItem .group .tagGroup .eachItem .detailWrap .description {
   font-size: 12px;
   line-height: 16px;
-  color: #a5a5a5;
+  color: #8f8f8f;
 }
 .resourcePage .mainResource .allItem .group .tagGroup .eachItem:hover {
   box-shadow: rgba(0, 0, 0, 0.0902) 0px 30px 20px -20px, rgba(0, 0, 0, 0.0902) 0px 0px 3px;
