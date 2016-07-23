@@ -31,17 +31,17 @@
 
 .resourcePage {
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 63px auto;
     background-color: #FEFEFE;
 
     .sideMenu {
         float: left;
-        width: 210px;
+        width: 270px;
         padding: 20px 30px;
         position: fixed;
 
         .menuList {
-            padding-left: 0px;
+            margin-left: 0px;
             font-size: 16px;
 
             .menuItem {
@@ -51,7 +51,7 @@
                 }
 
                 a {
-                    padding: 10px 10px 10px 4px;
+                    padding: 5px 10px 5px 4px;
                     display: block;
                     color: #6d6d6d;
 
@@ -70,9 +70,8 @@
 
     .mainResource {
         float: right;
-        width: calc(100% - 320px);
+        width: calc(100% - 270px);
         padding: 25px;
-        margin-top: -30px;
         background-color: #EFEFEF;
 
         .allItem {
@@ -84,7 +83,7 @@
 
                 h2 {
                     color: #777777;
-                    margin: 50px 0 30px 15px;
+                    margin: 12px 0 26px 15px;
                 }
 
                 .tagGroup {
@@ -130,8 +129,8 @@
                         .detailWrap {
                             float: right;
                             padding: 15px;
-                            width: calc(100% - 120px);
-                            height: calc(134px - 30px);
+                            width: calc(100% - 90px);
+                            height: 134px;
                             background-color: #F6F6F6;
 
                             .resourceTitle {

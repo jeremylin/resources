@@ -132,10 +132,33 @@ dfn {
  * contexts in Firefox 4+, Safari, and Chrome.
  */
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bitter',"Noto Sans", 'Noto Sans TC', "Apple LiGothic Medium", Roboto, "Microsoft JhengHei", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    font-weight: 400;
+    margin: 0.75em 0;
 }
+
+h2 a, h3 a, h4 a, h5 a, h6 a { 
+  font-weight: inherit; 
+  text-decoration: none; 
+  font-family: 'Bitter',"Noto Sans", 'Noto Sans TC', "Apple LiGothic Medium", Roboto, "Microsoft JhengHei", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
+h1 { font-size: 2em; } /* 32px */
+h2 { font-size: 1.7143em; line-height: 1.9em; } /* 24px */
+h3 { font-size: 1.5em; line-height: 1.6em; } /* 21px */
+h4 { font-size: 1.2857em; } /* 18px */
+h5 { font-size: 1em; line-height: 1.4em; } /* 16px */
+h6 { font-size: 1em; line-height: 1.4em; } /* 16px */
+
+p { margin-bottom: 1.5em; }
+p img { margin: 0; }
+p:empty { display: none; }
+
+em, i { font-style: italic; font-size: 0.8751em; }
+strong, b { font-weight: bold; }
+small { font-size: 0.7142em; }
+
 
 /**
  * Address styling not present in IE 8/9.

@@ -121,9 +121,75 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bitter',"Noto Sans", 'Noto Sans TC', "Apple LiGothic Medium", Roboto, "Microsoft JhengHei", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-weight: 400;
+  margin: 0.75em 0;
+}
+
+h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+  text-decoration: none;
+  font-family: 'Bitter',"Noto Sans", 'Noto Sans TC', "Apple LiGothic Medium", Roboto, "Microsoft JhengHei", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+}
+
+/* 32px */
+h2 {
+  font-size: 1.7143em;
+  line-height: 1.9em;
+}
+
+/* 24px */
+h3 {
+  font-size: 1.5em;
+  line-height: 1.6em;
+}
+
+/* 21px */
+h4 {
+  font-size: 1.2857em;
+}
+
+/* 18px */
+h5 {
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+/* 16px */
+h6 {
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+/* 16px */
+p {
+  margin-bottom: 1.5em;
+}
+
+p img {
+  margin: 0;
+}
+
+p:empty {
+  display: none;
+}
+
+em, i {
+  font-style: italic;
+  font-size: 0.8751em;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+small {
+  font-size: 0.7142em;
 }
 
 /**
@@ -472,24 +538,24 @@ input[type="password"]:focus {
 
 .resourcePage {
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 63px auto;
   background-color: #FEFEFE;
 }
 .resourcePage .sideMenu {
   float: left;
-  width: 210px;
+  width: 270px;
   padding: 20px 30px;
   position: fixed;
 }
 .resourcePage .sideMenu .menuList {
-  padding-left: 0px;
+  margin-left: 0px;
   font-size: 16px;
 }
 .resourcePage .sideMenu .menuList .menuItem .titleDot {
   margin-right: 10px;
 }
 .resourcePage .sideMenu .menuList .menuItem a {
-  padding: 10px 10px 10px 4px;
+  padding: 5px 10px 5px 4px;
   display: block;
   color: #6d6d6d;
 }
@@ -502,9 +568,8 @@ input[type="password"]:focus {
 }
 .resourcePage .mainResource {
   float: right;
-  width: calc(100% - 320px);
+  width: calc(100% - 270px);
   padding: 25px;
-  margin-top: -30px;
   background-color: #EFEFEF;
 }
 .resourcePage .mainResource .allItem {
@@ -516,7 +581,7 @@ input[type="password"]:focus {
 }
 .resourcePage .mainResource .allItem .group h2 {
   color: #777777;
-  margin: 50px 0 30px 15px;
+  margin: 12px 0 26px 15px;
 }
 .resourcePage .mainResource .allItem .group .tagGroup .tagg {
   color: #8f8f8f;
@@ -555,8 +620,8 @@ input[type="password"]:focus {
 .resourcePage .mainResource .allItem .group .tagGroup .eachItem .detailWrap {
   float: right;
   padding: 15px;
-  width: calc(100% - 120px);
-  height: calc(134px - 30px);
+  width: calc(100% - 90px);
+  height: 134px;
   background-color: #F6F6F6;
 }
 .resourcePage .mainResource .allItem .group .tagGroup .eachItem .detailWrap .resourceTitle {
