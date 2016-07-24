@@ -59,7 +59,7 @@ var Shira;
              * @returns {Number}
              */
             getElementY: function (elem) {
-                var y = 0;
+                var y = 66;
                 do y += elem.offsetTop;
                 while (elem = elem.offsetParent);
 
