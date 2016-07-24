@@ -221,6 +221,10 @@ footer {
         top: 68px;
         width: 100%;
 
+        .sideMenu scroll-fix {
+            top: 130px !important;
+        }
+
         .mainResource {
             .allItem {
                 .group {

@@ -18,7 +18,7 @@ var Shira;
 
         ScrollFix.Watcher.defaults = {
             fixClass: 'scroll-fix',
-            fixTop: 0,
+            fixTop: 34,
             fixOffset: 0,
             unfixOffset: 0,
             onUpdateFixed: null,
@@ -59,7 +59,7 @@ var Shira;
              * @returns {Number}
              */
             getElementY: function (elem) {
-                var y = 66;
+                var y = 0;
                 do y += elem.offsetTop;
                 while (elem = elem.offsetParent);
 
