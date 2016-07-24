@@ -31,10 +31,11 @@
 
 .resourcePage {
     max-width: 1400px;
+    width: 90%;
     margin: 63px auto;
     background-color: #FEFEFE;
     position: relative;
-    top: 160px;
+    top: 66px;
 
     .sideMenu {
         float: left;
@@ -136,7 +137,7 @@
                             background-color: #F6F6F6;
 
                             .resourceTitle {
-                                margin: 5px 0;
+                                margin: 3px 0 7px;
                                 font-size: 15px;
                                 line-height: 15px;
                                 color: #6d6d6d;
@@ -167,7 +168,6 @@
     /// 如果使用者之視窗寬度介於 1281px ~ 1439px，將會再載入這裡的 CSS。
     .resourcePage {
         max-width: 100%;
-        top: 95px;
     }
 }
 
@@ -175,15 +175,14 @@
 @media screen and (max-width: 1280px) {
     /// 如果使用者之視窗寬度介於 1025px ~ 1280px，將會再載入這裡的 CSS。
     .resourcePage {
-        top: 160px;
 
         .sideMenu {
-            width: 290px;
+            width: 220px;
             padding: 20px;
         }
 
         .mainResource {
-            width: calc(100% - 290px);
+            width: calc(100% - 220px);
 
             .allItem {
                 .group {
@@ -214,7 +213,8 @@
 @media screen and (max-width: 1024px) {
     // 如果使用者之視窗寬度介於 768px ~ 1024px，將會再載入這裡的 CSS。
     .resourcePage {
-        top: 160px;
+        top: 68px;
+        width: 100%;
 
         .mainResource {
             .allItem {
@@ -232,7 +232,7 @@
                             }
 
                             .detailWrap {
-                                width: calc(100% - 150px);
+                                width: calc(100% - 120px);
                             }
                         }
                     }
@@ -246,7 +246,7 @@
 @media screen and (max-width: 767px) {
     // 如果使用者之視窗寬度介於 481px ~ 767px，將會再載入這裡的 CSS。
     .resourcePage {
-        top: 0;
+        top: -62px;
 
         .sideMenu {
             display: none;
@@ -282,7 +282,7 @@
 
                                 .resourceTitle {
                                     margin: 0px 0 5px;
-                                    font-size: 12px;
+                                    font-size: 13px;
                                     line-height: 20px;
                                 }
                             }
